@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.grandparent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grass_parent {
+    height: 50%;
+    width: 100%;
+    background-color: green;
+}
+
+
+.sky_parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cloud_child {
+    width: 30%;
+    height: 30%;
+    background: #ECEFF1;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    border-radius: 100px;
+}
+
+.sun_parent {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+.sun_child {
+    height: 100px;
+    width: 100px;
+    background-color: #ccd42a;
+    border-radius: 50%;
+    order: -1;
+    margin: 20px
+}
+
+@media (max-width:500px) {
+    .sky_parent {
+        flex-direction: column;
+
+    }
+
+    .cloud_child {
+        width: 66%
+    }
+}
+
+#interestForm {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black
+}
